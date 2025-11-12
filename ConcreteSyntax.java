@@ -160,7 +160,7 @@ public class ConcreteSyntax {
 			token = input.nextToken();
 			match(":=");
 			a.term = expression();
-			match(";")
+			match(";");
 		} else
 			throw new RuntimeException(SyntaxError("Identifier"));
 		return a;
